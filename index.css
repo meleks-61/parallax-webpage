@@ -8,8 +8,9 @@ html{
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 1rem;
     line-height: 1.8rem;
-    color: #666;
+    color: #666666;
     height: 100%;
 }
 .background-container--image1{
@@ -25,16 +26,29 @@ html{
     min-height: 80%;
 
 }
+.background-container--image4{
+    background-image: url(./img/bg4.jpg);
+    min-height: 80%;
+
+}
+.background-container--image5{
+    background-image: url(./img/bg1.jpg);
+    min-height: 80%;
+
+}
 
 .background-container--image1,
 .background-container--image2,
-.background-container--image3{
+.background-container--image3,
+.background-container--image4,
+.background-container--image5{
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* parallax efect */
+    background-attachment: fixed; 
     opacity: 0.7;
-    /* position: relative; */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,16 +57,17 @@ html{
 
 
 .header-container__heading--logo{
-    width: 30px;
+    width: 30%;
     margin: 1rem;
 }
 
 .header-container{
-    /* position: absolute;
+    position: absolute;
     top: 50%;
-    width: 100%; */
+    width: 100%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
+    text-transform: uppercase;
     letter-spacing: 0.5rem;
 }
 .header-container__heading--big{
@@ -64,29 +79,33 @@ html{
     outline-offset: 1rem;
     text-transform: uppercase;
     line-height: 5rem;
+    color: white;
 
 }
 .header-container__heading--small{
     background-color: black;
     padding: 0.7rem;
-    border-top-left-radius: 0.7rem;
+    border-radius: 0.7rem 0rem 0.7rem 0rem;
     outline: 0.4rem inset purple;
     outline-offset: 0.2rem;
     text-transform: capitalize;
     line-height: 5rem;
+    color: white;
 }
 .section{
     text-align: center;
     padding: 3rem 5rem;
 }
 .section--light{
-    background-color: rgb(241, 241, 241);
-    color: #666;
+    background-color:#f1f1f1;
+    color: #666666;
+    line-height: 1.8rem;
 
 }
 .section--dark{
     background-color: #282e34;
-    color: #ddd;
+    color: #fff;
+    line-height: 1.8rem;
 
 
 }
